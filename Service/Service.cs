@@ -79,8 +79,8 @@ namespace Service
         public void RunAsConsole(string[] args)
         {
             OnStart(args);
-            Console.WriteLine("Press any key to exit");
-            Console.ReadLine();
+            Console.WriteLine("Service Running");
+            Console.ReadKey();
             OnStop();
         }
     }
